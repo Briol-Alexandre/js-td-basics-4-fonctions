@@ -16,6 +16,12 @@
 // et puis de déclarer une AUTRE fonction pour calculer le double de 128
 // etc. et ainsi de suite à chaque fois qu'on veut calculer le double d'un nouveau nombre 
 */
+/*
+function double3(){
+    console.log('Le double de 3 est ');
+}
+double3();
+*/
 
 /*
 // Si on regarde toutes ces fonctions, elles ont toutes un canevas commun,
@@ -36,3 +42,8 @@
                      - le double de 24 ;
                      - le double de 128.
 */
+function double(nombre) {
+    console.log('Le double de ' + nombre + ' est ' + (nombre * 2));
+}
+
+double();
