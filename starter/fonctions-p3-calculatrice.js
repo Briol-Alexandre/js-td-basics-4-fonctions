@@ -42,3 +42,4 @@ function calculer(num1, num2) {
 
 // Utilisation de la fonction calculer
 let calc =calculer(12, 89);
+console.log(calc);
