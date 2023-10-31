@@ -14,6 +14,31 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 
 // Déclaration de la fonction calculer
 
+const operation = prompt('Choisissez entre addition, soustraction, multiplication ou division');
+
+function calculer(num1, num2) {
+    switch (operation) {
+        case 'addition':
+            console.log(num1 + ' + ' + num2 + ' = ' + (num1 + num2));
+            break;
+        case 'soustraction':
+            console.log(num1 + ' - ' + num2 + ' = ' + (num1 - num2));
+            break;
+        case 'multiplication':
+            console.log(num1 + ' * ' + num2 + ' = ' + (num1 * num2));
+            break;
+        case 'division':
+            if (num2 !== 0) {
+                console.log(num1 + ' / ' + num2 + ' = ' + (num1 / num2));
+            } else {
+                console.log('Infinity');
+            }
+            break;
+        default:
+            console.log('Opération non valide. Veuillez choisir parmi addition, soustraction, multiplication ou division.');
+    }
+}
+
 
 // Utilisation de la fonction calculer
-
+let calc =calculer(12, 89);

@@ -16,15 +16,36 @@ N.B. Faites deux versions :
 
 
 // Utilisation de la fonction calcMin pour calculer le minimum
-
+/*
+                        function calcMin(param1, param2) {
+                            if (param1 > param2) {
+                                console.log(param2);
+                            } else if (param1 < param2){
+                                console.log(param1);
+                            }else{
+                                console.log(param2, param1);
+                            }
+                        }
+                        let params = calcMin(1, 1);
+*/
 
 // Version avec une arrow function
 
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
-
-
+/*
+                        const calcMinArrow = (param1, param2)=>{
+                            if (param1 > param2) {
+                                console.log(param2);
+                            } else if (param1 < param2){
+                                console.log(param1);
+                            }else{
+                                console.log(param2, param1);
+                            }
+                        }
+                        let params = calcMinArrow(1, 1);
+*/
 // Version encore plus concise avec une arrow function
 const calcMinConcise = (a, b) => (a < b) ? a : b;
 
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
-
+console.log(calcMinConcise(1, 34));
